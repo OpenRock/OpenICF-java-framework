@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Oracle ERP Connector</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.codehaus.groovy.eclipse.groovyBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.codehaus.groovy.eclipse.groovyNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>config-private</name>
+			<type>2</type>
+			<locationURI>USER_HOME/.connectors/connector-oracleerp/config</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
