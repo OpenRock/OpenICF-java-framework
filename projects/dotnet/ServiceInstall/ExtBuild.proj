@@ -56,6 +56,13 @@
 		</ReadLinesFromFile>
 		<WriteLinesToFile File="Files.wxs" Lines="@(FileBottomLines)" />
 	</Target>
+	
+	<Target Name="AfterBuild">
+	    <GetAssemblyIdentity AssemblyFiles="..\Service\bin\$(Configuration)\Framework.dll">
+	      <Output TaskParameter="Assemblies" ItemName="FrameworkAssembly"/>
+	    </GetAssemblyIdentity>
+	    <Copy SourceFiles="bin\$(Configuration)\ServiceInstall.msi" DestinationFiles="bin\$(Configuration)\ServiceInstall-%(FrameworkAssembly.Version).msi" />
+  </Target>
 
   <Target Name="Clean">
 		<MSBuild Projects="..\Service\Service.csproj" Targets="Clean" />
