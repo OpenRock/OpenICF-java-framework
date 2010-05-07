@@ -5,9 +5,9 @@
 		Language="1033"
 		Version="!(bind.FileVersion.Framework.dll)"
 		UpgradeCode="2C19FE30-F6A7-482D-A50F-C1E64D34C024"
-		Manufacturer="Sun Microsystems">
+		Manufacturer="Oracle">
 		<Package Description="Version: !(bind.FileVersion.Framework.dll)"
-			Comments="Comments"
+			Comments="Connector Server Installer"
 			InstallerVersion="200"
 			Compressed="yes"/>
 		<!--
