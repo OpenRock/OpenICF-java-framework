@@ -85,7 +85,6 @@
     <property name="build-toolkit" location="build/${toolkit.name}"/>
     <property name="nbm-name" value="IdentityConnectors-Plugin.nbm" />
     <property name="coverage.file" location="${basedir}/cobertura.ser"/>
-    <property name="license.file" value="license.txt" />
     <property name="thirdpartyreadme.file" value="THIRDPARTYREADME.txt" />
     <property name="failontestfailure" value="false"/>
     <property name="src-server" location="server"/>
@@ -180,7 +179,6 @@
             <fileset dir="${src-framework}">
                 <patternset refid="exclude.javasrc"/>
             </fileset>
-            <fileset file="${license.file}" />
             <fileset file="${thirdpartyreadme.file}" />
         </copy>
         <!-- compile test-common -->
@@ -196,7 +194,6 @@
             <fileset dir="${src-test-common}">
                 <patternset refid="exclude.javasrc"/>
             </fileset>
-            <fileset file="${license.file}" />
             <fileset file="${thirdpartyreadme.file}" />
         </copy>
         <!-- compile framework-internal -->
@@ -213,7 +210,6 @@
             <fileset dir="${src-framework-internal}">
                 <patternset refid="exclude.javasrc"/>
             </fileset>
-            <fileset file="${license.file}" />
             <fileset file="${thirdpartyreadme.file}" />
         </copy>
         <!-- compile test-contract -->
@@ -230,7 +226,6 @@
             <fileset dir="${src-test-contract}">
                 <patternset refid="exclude.javasrc"/>
             </fileset>
-            <fileset file="${license.file}" />
             <fileset file="${thirdpartyreadme.file}" />
         </copy>
     </target>
@@ -713,7 +708,6 @@
         <mkdir dir="${build-server}/bundles"/>
         <!-- add license files -->
         <copy todir="${build-server}">
-            <fileset file="${license.file}" />
             <fileset file="${thirdpartyreadme.file}" />
         </copy>
         <!-- package it -->

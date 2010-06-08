@@ -60,7 +60,6 @@
     <property name="java.target" value="1.5" />
     <property name="java.compilerargs" value="" />
     <property name="javadoc.author" value="true" />
-    <property name="license.file" value="${framework.dir}/license.txt" />
     <property name="thirdpartyreadme.file" value="${framework.dir}/THIRDPARTYREADME.txt" />
     <property name="failontestfailure" value="false"/>
     <!--
@@ -335,7 +334,6 @@
             <!-- include all native libs -->
             <fileset refid="native.libs" />
             <!-- include license -->
-            <fileset file="${license.file}"/>
             <fileset file="${thirdpartyreadme.file}"/>
             <manifest>
                 <attribute name="ConnectorBundle-FrameworkVersion" value="${ConnectorBundle-FrameworkVersion}" />
