@@ -57,7 +57,11 @@
                 AssemblyVersion="$(Major).$(Minor).$(Build).$(SVN_Revision)" 
                 AssemblyFileVersion="$(Major).$(Minor).$(Build).$(SVN_Revision)" />
     </Target>
-    <Target Name="BuildZip">        
+    <Target Name="BuildZip">
+        <Copy
+            SourceFiles="$(MSBuildProjectDirectory)\..\license.txt"
+            DestinationFolder="$(OutputPath)"
+        />        
         <Copy
             SourceFiles="$(MSBuildProjectDirectory)\..\THIRDPARTYREADME.txt"
             DestinationFolder="$(OutputPath)"
