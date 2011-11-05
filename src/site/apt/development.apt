@@ -43,13 +43,13 @@ Developing OpenICF
     <<Checkout the Build>>
 
 +---
-C:\build> svn checkout https://svn.forgerock.org/openicf/trunk/framework/java framework
+C:\build> svn checkout https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/java framework
 C:\build> cd framework
 
 C:\framework> mvn install
 +---
 
-    This command will install the 1.1.0.0-SNAPSHOT version of the OpenICF Framework. The same binaries are published to frequently to the {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/}ForgeRock Snapshot Repository}}.
+    This command will install the 1.1.0.0-EA version of the OpenICF Framework. The same binaries are published to frequently to the {{{http://maven.forgerock.org/repo/releases/org/forgerock/openicf/}ForgeRock Release Repository}}.
 
 *Developing .NET Connector Framework
 
@@ -76,7 +76,7 @@ C:\framework> mvn install
     <command>: msbuild.exe ConnectorFramework.sln /p:Configuration=Release /p:ZipRelease=true
 
 +---
-C:\build> svn checkout https://svn.forgerock.org/openicf/trunk/framework/dotnet/ framework
+C:\build> svn checkout https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/dotnet/ framework
 C:\build> set WIX_HOME=C:\Program Files\Windows Installer XML v3.5
 C:\build> set Path=%Path%;%WIX_HOME%\bin
 C:\build> set NUNIT_HOME=C:\Program Files\NUnit 2.5.10
@@ -118,9 +118,9 @@ ZipRelease | true
 
         <<Example>>: sample
 
-    *<version>: This value will be prefixed with the compatibility version (1.1). The final version 1.1.1.0-SNAPSHOT
+    *<version>: This value will be prefixed with the compatibility version (1.1). The final version 1.1.1.0-EA
 
-        <<Example>>: 1.0-SNAPSHOT
+        <<Example>>: 1.0-EA
 
     *<package>: org.forgerock.openicf.[artifactId]
 
@@ -173,7 +173,7 @@ mvn archetype:generate \
 -DremoteRepositories=http://maven.forgerock.org/repo/snapshots \
 -DgroupId=org.forgerock.openicf.bundles.misc \
 -DartifactId=sample \
--Dversion=1.0-SNAPSHOT \
+-Dversion=0.0-EA \
 -Dpackage=org.forgerock.openicf.sample \
 -Dconnector_name=Sample
 +---
@@ -190,7 +190,7 @@ mvn archetype:generate \
     Choose a number: : 1
     Define value for property 'groupId': : org.forgerock.openicf.<<misc>>
     Define value for property 'artifactId': : <<sample>>
-    Define value for property 'version':  1.0-SNAPSHOT: :
+    Define value for property 'version':  0.0-SNAPSHOT: :
     Define value for property 'package':  org.forgerock.openicf.<<sample>>: :
     [INFO] Using property: ALL_OPERATIONS = yes
     [INFO] Using property: OP_AUTHENTICATE = yes
@@ -208,13 +208,13 @@ mvn archetype:generate \
     [INFO] Using property: compatibility_version = 1.1
     [INFO] Using property: connector_family = <<misc>>
     Define value for property 'connector_name': : <<Sample>>
-    [INFO] Using property: framework_version = 0.0-SNAPSHOT
+    [INFO] Using property: framework_version = 0.0-EA
     [INFO] Using property: jira_project = ICFXXX
     [INFO] Using property: poolable_connector = no
     Confirm properties configuration:
     groupId: org.forgerock.openicf.misc
     artifactId: test
-    version: 1.0-SNAPSHOT
+    version: 0.0-SNAPSHOT
     package: org.forgerock.openicf.test
     ALL_OPERATIONS: yes
     OP_AUTHENTICATE: yes
@@ -232,7 +232,7 @@ mvn archetype:generate \
     compatibility_version: 1.1
     connector_family: misc
     connector_name: TestSample
-    framework_version: 0.0-SNAPSHOT
+    framework_version: 0.0-EA
     jira_project: ICFXXX
     poolable_connector: no
      Y: :
@@ -278,7 +278,7 @@ Developing .NET Connector Bundles
 
 
 +---
-C:\build> svn checkout https://svn.forgerock.org/openicf/trunk/connectors/dotnet/ connectors
+C:\build> svn checkout https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/connectors/dotnet/ connectors
 C:\build> set WIX_HOME=C:\Program Files\Windows Installer XML v3.5
 C:\build> set Path=%Path%;%WIX_HOME%\bin
 C:\build> set NUNIT_HOME=C:\Program Files\NUnit 2.5.10

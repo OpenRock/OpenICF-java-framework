@@ -27,16 +27,16 @@
     <parent>
         <groupId>org.forgerock.openicf.framework</groupId>
         <artifactId>framework</artifactId>
-        <version>1.1.0.0-SNAPSHOT</version>
+        <version>1.1.0.0-EA</version>
     </parent>
     <artifactId>connector-test-common</artifactId>
     <name>OpenICF Common Test Library</name>
     <description>TestHelpers is a helper class to simplify the testing of connectors.</description>
     <packaging>jar</packaging>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connector-test-common</connection>
-        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connector-test-common</developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java/connector-test-common</url>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/java/connector-test-common</connection>
+        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/java/connector-test-common</developerConnection>
+        <url>http://sources.forgerock.org/browse/openicf/tags/framework-1.1.0.0-EA/java/connector-test-common</url>
     </scm>
     <dependencies>
         <dependency>

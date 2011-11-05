@@ -31,7 +31,7 @@
     </parent>
     <groupId>org.forgerock.openicf.framework</groupId>
     <artifactId>framework</artifactId>
-    <version>1.1.0.0-SNAPSHOT</version>
+    <version>1.1.0.0-EA</version>
     <packaging>pom</packaging>
     <name>OpenICF Project</name>
     <description>
@@ -61,9 +61,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</connection>
-        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java</url>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/java</connection>
+        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.0.0-EA/java</developerConnection>
+        <url>http://sources.forgerock.org/browse/openicf/tags/framework-1.1.0.0-EA/java</url>
     </scm>
     <distributionManagement>
         <site>
@@ -184,7 +184,6 @@
         <module>testcommonv2</module>
         <module>testbundlev1</module>
         <module>testbundlev2</module>
-        <!--module>compatibility-tests-parent</module-->
         <module>bundles-parent</module>
         <module>icfl-over-slf4j</module>
         <module>openicf-zip</module>
@@ -251,48 +250,48 @@
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-test-common</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework-internal</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework-contract</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
                 <type>test-jar</type>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>testcommonv1</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>testcommonv2</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>testbundlev1</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>testbundlev2</artifactId>
-                <version>1.1.0.0-SNAPSHOT</version>
+                <version>1.1.0.0-EA</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf</groupId>
@@ -304,7 +303,6 @@
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
                 <version>1.8.3</version>
-                <!--version>[1.8.0,1.9.0)</version-->
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
