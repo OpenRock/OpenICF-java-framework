@@ -49,7 +49,7 @@ C:\build> cd framework
 C:\framework> mvn install
 +---
 
-    This command will install the 1.1.0.0-EA version of the OpenICF Framework. The same binaries are published to frequently to the {{{http://maven.forgerock.org/repo/releases/org/forgerock/openicf/}ForgeRock Release Repository}}.
+    This command will install the 1.1.0.0 version of the OpenICF Framework. The same binaries are published to frequently to the {{{http://maven.forgerock.org/repo/releases/org/forgerock/openicf/}ForgeRock Release Repository}}.
 
 *Developing .NET Connector Framework
 
@@ -118,9 +118,9 @@ ZipRelease | true
 
         <<Example>>: sample
 
-    *<version>: This value will be prefixed with the compatibility version (1.1). The final version 1.1.1.0-EA
+    *<version>: This value will be prefixed with the compatibility version (1.1). The final version 1.1.1.0
 
-        <<Example>>: 1.0-EA
+        <<Example>>: 1.0
 
     *<package>: org.forgerock.openicf.[artifactId]
 
@@ -173,7 +173,7 @@ mvn archetype:generate \
 -DremoteRepositories=http://maven.forgerock.org/repo/snapshots \
 -DgroupId=org.forgerock.openicf.bundles.misc \
 -DartifactId=sample \
--Dversion=0.0-EA \
+-Dversion=0.0 \
 -Dpackage=org.forgerock.openicf.sample \
 -Dconnector_name=Sample
 +---
@@ -208,7 +208,7 @@ mvn archetype:generate \
     [INFO] Using property: compatibility_version = 1.1
     [INFO] Using property: connector_family = <<misc>>
     Define value for property 'connector_name': : <<Sample>>
-    [INFO] Using property: framework_version = 0.0-EA
+    [INFO] Using property: framework_version = 0.0
     [INFO] Using property: jira_project = ICFXXX
     [INFO] Using property: poolable_connector = no
     Confirm properties configuration:
@@ -232,7 +232,7 @@ mvn archetype:generate \
     compatibility_version: 1.1
     connector_family: misc
     connector_name: TestSample
-    framework_version: 0.0-EA
+    framework_version: 0.0
     jira_project: ICFXXX
     poolable_connector: no
      Y: :

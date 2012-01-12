@@ -36,9 +36,9 @@ Downloads
 
     Downloads are available from the {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/}ForgeRock Maven repository}}
 
-    * Connector Framework {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/framework/connector-framework/1.1.0.0-EA}connector-framework-1.1.0.0-EA.jar}}
+    * Connector Framework {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/framework/connector-framework/1.1.0.0}connector-framework-1.1.0.0.jar}}
 
-    * Connector Framework Internal {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/framework/connector-framework-internal/1.1.0.0-EA}connector-framework-internal-1.1.0.0-EA.jar}}
+    * Connector Framework Internal {{{http://maven.forgerock.org/repo/snapshots/org/forgerock/openicf/framework/connector-framework-internal/1.1.0.0}connector-framework-internal-1.1.0.0.jar}}
 
     []
 

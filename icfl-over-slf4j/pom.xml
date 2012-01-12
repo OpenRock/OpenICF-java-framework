@@ -27,10 +27,10 @@
     <parent>
         <groupId>org.forgerock.openicf.framework</groupId>
         <artifactId>framework</artifactId>
-        <version>1.1.0.0-EA</version>
+        <version>1.1.0.0</version>
     </parent>
     <artifactId>icfl-over-slf4j</artifactId>
-    <version>1.1.0.0-EA</version>
+    <version>1.1.0.0</version>
     <name>OpenICF Framework - logging over SLF4J</name>
     <packaging>bundle</packaging>
     <scm>
