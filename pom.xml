@@ -61,9 +61,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</connection>
-        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java</url>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/branches/framework-1.1.1.x/java</connection>
+        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/branches/framework-1.1.1.x/java</developerConnection>
+        <url>http://sources.forgerock.org/browse/openicf/branches/framework-1.1.1.x/java</url>
     </scm>
     <distributionManagement>
         <site>
