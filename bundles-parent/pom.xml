@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.forgerock.openicf.framework</groupId>
         <artifactId>framework</artifactId>
-        <version>1.1.1.1-SNAPSHOT</version>
+        <version>1.1.1.0</version>
     </parent>
     <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>connectors-parent</artifactId>
@@ -46,11 +46,11 @@
         </site>
     </distributionManagement>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connectors-parent</connection>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.1.0/java/connectors-parent</connection>
         <developerConnection>
-            scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connectors-parent
+            scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.1.1.0/java/connectors-parent
         </developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java/connectors-parent</url>
+        <url>http://sources.forgerock.org/browse/openicf/tags/framework-1.1.1.0/java/connectors-parent</url>
     </scm>
     <!-- mvn help:effective-pom
          mvn archetype:create-from-project
@@ -76,7 +76,7 @@
 
         <!-- OSGi Properties -->
         <openicf.osgi.exclude.dependencies>false</openicf.osgi.exclude.dependencies>
-        <framework.version>1.1.1.1-SNAPSHOT</framework.version>
+        <framework.version>1.1.1.0</framework.version>
 
         <openicf.osgi.import.framework.version>
             version="[$(version;==;${framework.version}),$(version;+;${framework.version}))"
@@ -330,7 +330,7 @@
                 <plugin>
                     <groupId>org.forgerock.maven.plugins</groupId>
                     <artifactId>openicf-maven-plugin</artifactId>
-                    <version>1.1.0-SNAPSHOT</version>
+                    <version>1.1.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -340,7 +340,7 @@
             <plugin>
                 <groupId>org.forgerock.maven.plugins</groupId>
                 <artifactId>openicf-maven-plugin</artifactId>
-                <version>1.1.0-SNAPSHOT</version>
+                <version>1.1.0</version>
             </plugin>
         </plugins>
     </reporting>
