@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ! CCPL HEADER START
+  !
+  ! This work is licensed under the Creative Commons
+  ! Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+  ! To view a copy of this license, visit
+  ! http://creativecommons.org/licenses/by-nc-nd/3.0/
+  ! or send a letter to Creative Commons, 444 Castro Street,
+  ! Suite 900, Mountain View, California, 94041, USA.
+  !
+  ! You can also obtain a copy of the license at
+  ! legal/CC-BY-NC-ND.txt.
+  ! See the License for the specific language governing permissions
+  ! and limitations under the License.
+  !
+  ! If applicable, add the following below this CCPL HEADER, with the fields
+  ! enclosed by brackets "[]" replaced with your own identifying information:
+  !      Portions Copyright [yyyy] [name of copyright owner]
+  !
+  ! CCPL HEADER END
+  !
+  !      Copyright 2012-2013 ForgeRock AS.
+  !
+-->
+<chapter xml:id='chap-whats-new'
+ xmlns='http://docbook.org/ns/docbook' version='5.0' xml:lang='en'
+ xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+ xsi:schemaLocation='http://docbook.org/ns/docbook http://docbook.org/xml/5.0/xsd/docbook.xsd'
+ xmlns:xlink='http://www.w3.org/1999/xlink'
+ xmlns:xinclude='http://www.w3.org/2001/XInclude'>
+ <title>What's New in OpenICF <?eval ${docTargetVersion}?></title>
+
+ <para>This release of OpenICF includes the following enhancements and new features.</para>
+
+  <!-- List generated at 16:55:50 20121218 using http://bugster.forgerock.org/jira/rest/api/2/search?jql=project+%3D+OpenICF+and+%28component+%21%3D+documentation+OR+component+is+EMPTY%29+and+resolution+%3D+fixed+and+type+in+%28Improvement%2C+%22New+Feature%22%29&startAt=0&maxResults=500&fields=summary-->
+  <itemizedlist>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-62" xlink:show="new">OPENICF-62</link>: Improve the performance - Disable LocalCache</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-47" xlink:show="new">OPENICF-47</link>: Add core documentation for OpenICF</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-40" xlink:show="new">OPENICF-40</link>: Update the Apache Commons Daemon binary in OpenICF Java assembly</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-38" xlink:show="new">OPENICF-38</link>: Make more useable the return objects of the ScriptExecutors</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-37" xlink:show="new">OPENICF-37</link>: Package the OpenICF .Net Connector server </para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-34" xlink:show="new">OPENICF-34</link>: AD Connector should be able  to run PowerShell script for the RunScriptOnResource operation</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-32" xlink:show="new">OPENICF-32</link>: ScriptedSQL connector should validate connection to the database</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-31" xlink:show="new">OPENICF-31</link>: ScriptedSQL connector needs a debug mode where scripts are reloaded when invoked</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-30" xlink:show="new">OPENICF-30</link>: ScriptedSQL connector autocommit mode to be configurable</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-25" xlink:show="new">OPENICF-25</link>: Add simple heartbeat facility</para></listitem>
+   <!-- Specifically removed OPENICF-18 -->
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-16" xlink:show="new">OPENICF-16</link>: Connector adds some empty lines to the XML files when writing into it</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-15" xlink:show="new">OPENICF-15</link>: Output fields always quoted with valueQualifier</para></listitem>
+   <listitem><para><link xlink:href="https://bugster.forgerock.org/jira/browse/OPENICF-4" xlink:show="new">OPENICF-4</link>: Add optional MVCC support</para></listitem>
+  </itemizedlist>
+</chapter>
