@@ -31,7 +31,7 @@
     <parent>
         <groupId>org.forgerock.openicf.connectors</groupId>
         <artifactId>connectors-parent</artifactId>
-        <version>1.4.0.0-RC2</version>
+        <version>1.4.0.0</version>
     </parent>
     <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>basic-connector</artifactId>

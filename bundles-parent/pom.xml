@@ -28,7 +28,7 @@
     <parent>
         <groupId>org.forgerock.openicf.framework</groupId>
         <artifactId>framework</artifactId>
-        <version>1.4.0.0-RC2</version>
+        <version>1.4.0.0</version>
     </parent>
     <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>connectors-parent</artifactId>
@@ -46,11 +46,11 @@
         </site>
     </distributionManagement>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connectors-parent</connection>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.4.0.0/java/connectors-parent</connection>
         <developerConnection>
-            scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java/connectors-parent
+            scm:svn:https://svn.forgerock.org/openicf/tags/framework-1.4.0.0/java/connectors-parent
         </developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java/connectors-parent</url>
+        <url>http://sources.forgerock.org/browse/openicf/tags/framework-1.4.0.0/java/connectors-parent</url>
     </scm>
     <!-- mvn help:effective-pom
          mvn archetype:create-from-project
@@ -76,7 +76,7 @@
 
         <!-- OSGi Properties -->
         <openicf.osgi.exclude.dependencies>false</openicf.osgi.exclude.dependencies>
-        <framework.version>1.4.0.0-RC2</framework.version>
+        <framework.version>1.4.0.0</framework.version>
 
         <openicf.osgi.import.framework.version>
             version="[$(version;==;${framework.version}),$(version;+;${framework.version}))"
