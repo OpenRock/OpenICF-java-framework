@@ -31,7 +31,7 @@
     </parent>
     <groupId>org.forgerock.openicf.framework</groupId>
     <artifactId>framework</artifactId>
-    <version>1.4.0.0-RC2</version>
+    <version>1.4.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>OpenICF Project</name>
     <description>
@@ -61,9 +61,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</connection>
-        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/trunk/framework/java</developerConnection>
-        <url>http://sources.forgerock.org/browse/openicf/trunk/framework/java</url>
+        <connection>scm:svn:https://svn.forgerock.org/openicf/branches/framework-1.4.0.x/java</connection>
+        <developerConnection>scm:svn:https://svn.forgerock.org/openicf/branches/framework-1.4.0.x/java</developerConnection>
+        <url>http://sources.forgerock.org/browse/openicf/branches/framework-1.4.0.x/java</url>
     </scm>
     <distributionManagement>
         <site>
@@ -254,22 +254,22 @@
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework</artifactId>
-                <version>1.4.0.0-RC2</version>
+                <version>1.4.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework-internal</artifactId>
-                <version>1.4.0.0-RC2</version>
+                <version>1.4.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-test-common</artifactId>
-                <version>1.4.0.0-RC2</version>
+                <version>1.4.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework-contract</artifactId>
-                <version>1.4.0.0-RC2</version>
+                <version>1.4.0.1-SNAPSHOT</version>
             </dependency>
 
             <!-- Provided Dependencies -->
@@ -284,7 +284,7 @@
             <dependency>
                 <groupId>org.forgerock.openicf.framework</groupId>
                 <artifactId>connector-framework</artifactId>
-                <version>1.4.0.0-RC2</version>
+                <version>1.4.0.1-SNAPSHOT</version>
                 <type>test-jar</type>
                 <scope>test</scope>
             </dependency>
