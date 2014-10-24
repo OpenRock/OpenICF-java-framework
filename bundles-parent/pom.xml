@@ -70,7 +70,6 @@
         <!-- These two properties must be set in the connector project -->
         <connectorName>${connectorPackage}.${connectorClass}</connectorName>
 
-        <contract.suiteName>org.identityconnectors.contract.test.ContractITCase</contract.suiteName>
         <testConfigurations>default</testConfigurations>
         <privateConfigPath>${user.home}/.connectors/${project.artifactId}-${project.version}/config</privateConfigPath>
 
