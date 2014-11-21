@@ -53,7 +53,11 @@
             <artifactId>groovy-all</artifactId>
             <scope>compile</scope>
         </dependency>
-    </dependencies>
+    </dependencies> 
+    <properties>
+        <!-- If we release this project, we need to include the Forgerock binary license -->
+        <include.binary.license>${project.build.directory}</include.binary.license>
+    </properties>
     <build>
         <finalName>openicf-${project.version}</finalName>
         <plugins>

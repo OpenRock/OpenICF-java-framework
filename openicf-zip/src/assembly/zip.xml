@@ -57,7 +57,15 @@
         <fileSet>
             <directory>${project.build.directory}/licenseResource</directory>
             <outputDirectory>/openicf/</outputDirectory>
-        </fileSet>
+         </fileSet>
+         <!-- Include the Forgerock binary license file if exists -->
+         <fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory>/openicf/legal-notices/</outputDirectory>
+            <includes>
+               <include>license.txt</include>
+            </includes>
+         </fileSet>
     </fileSets>
     <dependencySets>
         <dependencySet>
