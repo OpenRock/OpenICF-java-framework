@@ -19,7 +19,7 @@
  * enclosed by brackets [] replaced by your own identifying information:
  * "Portions Copyrighted [year] [name of copyright owner]"
  * ====================
- * Portions Copyrighted 2010-2013 ForgeRock AS.
+ * Portions Copyrighted 2010-2016 ForgeRock AS.
  */
 
 package org.identityconnectors.framework.impl.api.remote;
@@ -61,6 +61,7 @@ public class RemoteConnectorInfoManagerImpl implements ConnectorInfoManager,
     private Long serverStartTime = null;
 
     private final Vector<ConnectorEventHandler> eventHandlers = new Vector<ConnectorEventHandler>();
+    private boolean markedDown;
 
     private RemoteConnectorInfoManagerImpl() {
         frameworkConnectionInfo = null;
@@ -116,6 +117,7 @@ public class RemoteConnectorInfoManagerImpl implements ConnectorInfoManager,
         } else {
             serverStartTime = System.currentTimeMillis();
         }
+        markedDown = false;
 
         // Notify all the listeners
         List<ConnectorInfo> unchanged = new ArrayList<ConnectorInfo>(connectorInfoList.size());
@@ -191,14 +193,19 @@ public class RemoteConnectorInfoManagerImpl implements ConnectorInfoManager,
             Map<String, Object> serverInfo = getServerInfo();
             Object o = serverInfo.get(HelloResponse.SERVER_START_TIME);
             if (o instanceof Long) {
-                if (null == serverStartTime || ((Long) o) > serverStartTime) {
+                Long newStartTime = ((Long) o);
+                if (null == serverStartTime || newStartTime > serverStartTime 
+                        || newStartTime.equals(serverStartTime) && markedDown) {
                     if (LOG.isOk()) {
                         if (null != serverStartTime) {
                             LOG.ok("Connector server has been restarted since {0}, new start time: {1}",
-                                    new Date(serverStartTime), new Date((Long) o));
+                                    new Date(serverStartTime), new Date(newStartTime));
+                        } else if (newStartTime.equals(serverStartTime) && markedDown) {
+                            LOG.ok("Connection to connector server has been restablished, existing start time: {1}",
+                                    new Date(serverStartTime));                            
                         } else {
                             LOG.ok("First connection to connector server has been established, new start time: {0}",
-                                    new Date((Long) o));
+                                    new Date(newStartTime));
                         }
                     }
                     init();
@@ -213,6 +220,7 @@ public class RemoteConnectorInfoManagerImpl implements ConnectorInfoManager,
                 }
             }
             connectorInfoList = null;
+            markedDown = true;
             LOG.error("Failed to connect to remote connector server {0}", frameworkConnectionInfo);
         } catch (Exception e) {
             LOG.error(e, "Failed to update the ConnectorInfo from remote connector server");
